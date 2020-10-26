@@ -39,6 +39,12 @@ class Order(models.Model):
         on_delete=models.SET_NULL,
         related_name="order_profile",
     )
+    total_amount = models.DecimalField(
+        max_digits=30,
+        decimal_places=10,
+        null=True,
+        blank=True,
+    )
 
 
 class PaymentMethod(models.Model):
