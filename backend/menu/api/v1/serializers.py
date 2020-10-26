@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from menu.models import Category, Country, Item, ItemVariant, Review
+from menu.models import ItemVariant, Country, Item, Category, Review
 
 
 class CategorySerializer(serializers.ModelSerializer):
