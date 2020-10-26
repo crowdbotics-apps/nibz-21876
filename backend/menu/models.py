@@ -10,6 +10,10 @@ class Category(models.Model):
     description = models.TextField()
     image = models.URLField()
     icon = models.URLField()
+    total_amount = models.FloatField(
+        null=True,
+        blank=True,
+    )
 
 
 class Item(models.Model):

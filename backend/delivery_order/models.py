@@ -40,10 +40,10 @@ class Order(models.Model):
         related_name="order_profile",
     )
     total_amount = models.DecimalField(
-        max_digits=30,
-        decimal_places=10,
         null=True,
         blank=True,
+        max_digits=30,
+        decimal_places=10,
     )
 
 
